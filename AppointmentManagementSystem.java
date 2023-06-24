@@ -158,26 +158,37 @@ public class AppointmentManagementSystem {
 
         // Sample records
         Visitor visitor1 = new Visitor();
-        visitor1.setName("John Doe");
+        visitor1.setName("Aditya Singh");
         visitor1.setContactNumber("9876543210");
-        visitor1.setEmail("john@example.com");
+        visitor1.setEmail("singh@example.com");
 
         Appointment appointment1 = new Appointment();
-        appointment1.setDate("24/06/2023");
+        appointment1.setDate("24/05/2023");
         appointment1.setTimeSlot("10:00 AM");
         appointment1.setVisitor(visitor1);
         clinic.addVisitor(appointment1);
 
         Visitor visitor2 = new Visitor();
-        visitor2.setName("Jane Smith");
+        visitor2.setName("Swati Lavane");
         visitor2.setContactNumber("1234567890");
-        visitor2.setEmail("jane@example.com");
+        visitor2.setEmail("swati@example.com");
 
         Appointment appointment2 = new Appointment();
-        appointment2.setDate("24/06/2023");
+        appointment2.setDate("24/05/2023");
         appointment2.setTimeSlot("11:00 AM");
         appointment2.setVisitor(visitor2);
         clinic.addVisitor(appointment2);
+
+        Visitor visitor3 = new Visitor();
+        visitor3.setName("Rayith Bose");
+        visitor3.setContactNumber("1234567890");
+        visitor3.setEmail("bose@example.com");
+
+        Appointment appointment3 = new Appointment();
+        appointment3.setDate("24/05/2023");
+        appointment3.setTimeSlot("11:00 AM");
+        appointment3.setVisitor(visitor3);
+        clinic.addVisitor(appointment3);
 
         while (true) {
             System.out.println("=== Appointment Management System ===");
@@ -240,12 +251,12 @@ public class AppointmentManagementSystem {
 
                 case 5:
                     System.out.println("=== Book an Appointment ===");
-                    // Implementation for booking a new appointment
+                    // for booking a new appointment
                     break;
 
                 case 6:
                     System.out.println("=== Edit/Cancel Appointment ===");
-                    // Implementation for editing/canceling an appointment
+                    // for editing/canceling an appointment
                     break;
 
                 case 0:
